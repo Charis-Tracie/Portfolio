@@ -1,0 +1,219 @@
+/* === Global Styles === */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Headings === */
+h1, h2, h3, h4, h5, h6 {
+  color: orange;
+  text-align: center;
+  font-family: Consolas, monospace;
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+/* === Link Styles === */
+a {
+  color: lightblue;
+  text-decoration: underline;
+  text-decoration-style: dotted;       /* Options: solid, double, dotted, dashed, wavy */
+  text-decoration-color: rgb(1, 70, 94);  /* Set custom color */
+  font-size: inherit;
+}
+
+/* Emoji size */
+.emoji {
+  font-size: 30px;
+}
+
+/* === Navbar Styles === */
+nav {
+  background-color: #e6751a;
+  justify-content: space-between;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.logo {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: rgb(243, 250, 151);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Consolas', Times, serif;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;       /* Options: solid, double, dotted, dashed, wavy */
+  text-decoration-color: rgb(16, 3, 133);  /* Set custom color */
+  color: rgba(121, 4, 136, 0.486);
+}
+
+/* === Section Styling === */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* === Buttons === */
+button, .download-btn {
+  background-color: darkorange;
+  color: white;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: box-shadow 0.3s ease, transform 0.1s ease;
+}
+
+button:hover, .download-btn:hover {
+  box-shadow: 0 0 20px 5px orange;
+}
+
+button:active, .download-btn:active {
+  box-shadow: 0 0 25px 7px gold;
+  transform: scale(0.98);
+}
+
+/* === Profile Image Flip Card === */
+.profile-container {
+  perspective: 1000px;
+  width: 200px;
+  margin: 0;
+  position:absolute;
+  top: 10%;
+    left: 15%;
+
+}
+
+.profile-card {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Profile Picture Top Left */
+.profile-top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.profile-container:hover .profile-card {
+  transform: rotateY(180deg);
+}
+
+.profile-front, .profile-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0%;
+  overflow: hidden;
+}
+
+.profile-front img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 0%;
+  border: 3px solid #f3d964;
+}
+
+.profile-back {
+  background-color: #ec8824;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* === Form Styling === */
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* === Footer === */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#home {
+  padding-top: 6rem; /* Push content below sticky navbar */
+  text-align: center;
+}
+
+#about p {
+  word-spacing: 5px;  /* Adjust value as needed */
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  margin-top: 120px;
+}
+
