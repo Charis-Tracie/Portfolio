@@ -9,6 +9,7 @@ Welcome to my personal portfolio website! This project showcases my journey as a
 I am a beginner software engineer passionate about learning  web development. I enjoy building simple, clean websites and also have a growing interest in video editing and creative digital media.
 
 ## 📁 Portfolio Sections
+https://charis-tracie.github.io/Portfolio/
 
 - **Home** – A brief introduction and welcome message.
 - **About** – Information about my background and learning goals.
